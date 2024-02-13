@@ -2,12 +2,25 @@
 
 const Employee = require ("../Employee");
 
+const Employee = require("../Employee");
+
 class Engineer extends Employee {
-    constructor(officeNumber){
-        this.officeNumber = officeNumber ;
+    constructor(name, id, email, github) {
+        // Call the constructor of the parent class (Employee) using super()
+        super(name, id, email);
+        // Add any additional properties specific to the Engineer class
+        this.github = github;
     }
 
-    getOfficeNumber(){
-        return this.officeNumber;
+    // Method specific to Engineer class
+    getGithub() {
+        return this.github;
+    }
+
+    // Override the getRole() method to return 'Engineer'
+    getRole() {
+        return 'Engineer';
     }
 }
+
+module.exports = Engineer; // Export the Engineer class
