@@ -18,6 +18,10 @@
   ## Usage:
   simply run npm test in the terminal
 
+  ## Screenshot:
+![image](https://github.com/leeathena/Team-profile-generator/assets/149600986/dbc1340f-733e-4b75-96ac-3cc4eded7208)
+
+
   ## Contributing:
   N/A
 
